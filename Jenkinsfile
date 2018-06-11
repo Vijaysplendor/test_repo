@@ -8,8 +8,6 @@ pipeline {
 		     }
 		  }
 	   }
-	}
-	stages {
 	   stage ('Testing stage') {
 	      steps {
 	      withMaven(maven: 'MAVEN_HOME') {
@@ -17,8 +15,6 @@ pipeline {
 		     }
 		  }
 	   }
-	}
-	stages {
 	   stage ('Deployment stage') {
 	      steps {
 	      withMaven(maven: 'MAVEN_HOME') {
